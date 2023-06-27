@@ -1,0 +1,564 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fswiss\fcharset0 ArialMT;\f4\fswiss\fcharset0 Arial-BoldMT;\f5\fnil\fcharset0 HelveticaNeue;
+\f6\fnil\fcharset0 HelveticaNeue-Italic;\f7\fnil\fcharset0 HelveticaNeue-Bold;\f8\fswiss\fcharset0 Helvetica-Bold;
+\f9\froman\fcharset0 Times-Roman;\f10\fnil\fcharset0 Menlo-Bold;\f11\froman\fcharset0 Times-Bold;
+\f12\fnil\fcharset0 TrebuchetMS;\f13\fnil\fcharset0 TrebuchetMS-Italic;\f14\fnil\fcharset0 TrebuchetMS-Bold;
+\f15\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue135;
+\red0\green0\blue0;\red38\green38\blue38;\red60\green64\blue68;\red5\green10\blue30;\red65\green128\blue255;
+\red24\green25\blue27;\red203\green35\blue57;\red91\green40\blue180;\red6\green33\blue79;\red34\green53\blue69;
+\red26\green28\blue31;\red26\green26\blue26;\red247\green247\blue247;\red234\green234\blue234;\red26\green28\blue31;
+\red31\green31\blue31;\red239\green239\blue239;\red60\green64\blue68;\red9\green78\blue192;\red170\green0\blue83;
+\red40\green82\blue135;\red210\green9\blue5;\red255\green236\blue236;\red1\green32\blue135;\red17\green17\blue17;
+\red17\green17\blue17;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c60000;
+\csgray\c0;\cssrgb\c20000\c20000\c20000;\cssrgb\c30196\c31765\c33725;\cssrgb\c1569\c4706\c15686;\cssrgb\c31373\c59216\c100000\c18039;
+\cssrgb\c12549\c12941\c14118;\cssrgb\c84314\c22745\c28627;\cssrgb\c43529\c25882\c75686;\cssrgb\c1176\c18431\c38431;\cssrgb\c17255\c27059\c34118;
+\cssrgb\c13725\c14902\c16078;\cssrgb\c13333\c13333\c13333;\cssrgb\c97647\c97647\c97647;\cssrgb\c93333\c93333\c93333;\cssrgb\c13725\c14902\c16078;
+\cssrgb\c16078\c16078\c16078;\cssrgb\c94902\c94902\c94902;\cssrgb\c30196\c31765\c33725;\cssrgb\c0\c40000\c80000;\cssrgb\c73333\c0\c40000;
+\cssrgb\c20000\c40000\c60000;\cssrgb\c86667\c13333\c0;\cssrgb\c100000\c94118\c94118;\cssrgb\c0\c20000\c60000;\cssrgb\c8627\c8627\c8627;
+\cssrgb\c8627\c8627\c8627;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww18400\viewh15000\viewkind1
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \expnd0\expndtw0\kerning0
+This code uses Spring\'a0{\field{\*\fldinst{HYPERLINK "https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html"}}{\fldrslt 
+\f1\fs30 \cf4 @RestController}}\'a0annotation, which marks the class as a controller where every method returns a domain object instead of a view. It is shorthand for including both\'a0
+\f1\fs30 \cf4 @Controller
+\f0\fs32 \cf0 \'a0and\'a0
+\f1\fs30 \cf4 @ResponseBody
+\f0\fs32 \cf0 .\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+
+\f1\fs30 \cf4 \kerning1\expnd0\expndtw0 \'95	\expnd0\expndtw0\kerning0
+@RestController
+\f0\fs32 \cf0 \'a0indicates that the data returned by each method will be written straight into the response body instead of rendering a template.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+MYSQL\
+Run docker \
+Look at images, run mysql, it complains if you don\'92t have some initial args, put them in\
+\
+Go to containers\
+Pick the name\
+Go to terminal\
+Type mysql to get the mysql> prompt\
+\
+What does final mean \
+\
+Another way:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf5 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 docker run -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7\
+Dbeaver:
+\f0\fs32 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 Localhost, root root 3307\
+\
+Create an Entity (user) and a Repository\
+\
+Get list from a repo, and map over: 
+\f1\fs30 \cf6   List<EntityModel<Employee>> employees = repository.findAll().stream()\
+      .map\
+\
+What is the meaning of ::
+\f0\fs32 \cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf7 CLASSPATH: CLASSPATH is\'a0\cf8 \cb9 an environment variable which is used by Application ClassLoader to locate and load the .\cf7 \cb2 \'a0\cf8 \cb9 class files\cf7 \cb2 . The CLASSPATH defines the path, to find third-party and user-defined classes that are not extensions or part of Java platform.
+\fs24 \cf10 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\fs30 \cf4 \cb2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+@Entity
+\f0\fs32 \cf0 \'a0is a JPA annotation to make this object ready for storage in a JPA-based data store.\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+What is Optional \
+	may be null\
+	in Java 8 cannot use orElseThrow\
+	after getting it, need to \'91get\'92 the thing, like employee.get().setName()\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \
+808 328 1234\
+\
+Integrating data\
+Javaprojects with maven \
+What is a war\
+Centralized config\
+Reactive restful service\
+\
+\
+Where am I:\
+https://spring.io/guides/tutorials/rest/\
+
+\fs36 \cb2 \outl0\strokewidth0 \strokec3 Building links into your REST API\
+
+\fs32 \cb2 \outl0\strokewidth0 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs30 \cf6 \cb2 \outl0\strokewidth0 \strokec6 \
+3 orElseThrow\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\fs32 \cf0 \cb2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 The return type of the method has changed from\'a0
+\f1\fs30 \cf4 \strokec4 Employee
+\f0\fs32 \cf0 \strokec3 \'a0to\'a0
+\f1\fs30 \cf4 \strokec4 EntityModel<Employee>
+\f0\fs32 \cf0 \strokec3 .\'a0
+\f1\fs30 \cf4 \strokec4 EntityModel<T>
+\f0\fs32 \cf0 \strokec3 \'a0is a generic container from Spring HATEOAS that includes not only the data but a collection of links.\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf0 \cb1 4  What is ::\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs30 \cf6 \cb2 \strokec6 0 what is a repository, when do you use an actual database?\
+\
+ 1 List<EntityModel<Employee>> employees = repository.findAll().stream()\
+      .map(employee -> EntityModel.of(employee,\
+          linkTo(methodOn(EmployeeController\cb1 .\cf11 \strokec11 class\cf6 \strokec6 ).\cf12 \strokec12 one\cf6 \cb2 \strokec6 (employee.getId())).withSelfRel(),\
+          linkTo(methodOn(EmployeeController\cb1 .\cf11 \strokec11 class\cf6 \strokec6 ).\cf12 \strokec12 all\cf6 \cb2 \strokec6 ()).withRel(\cf13 \cb1 \strokec13 "employees"\cf6 \cb2 \strokec6 )))\
+      .collect(Collectors.toList());
+\f0\fs32 \cf0 \cb1 \strokec3 \
+\cb2 \outl0\strokewidth0 \
+2 When do you use an interface?\
+\
+5 Go over this:  c
+\f1\fs30 \cf11 \cb1 \outl0\strokewidth0 \strokec11 lass\cf6 \strokec6  \cf12 \strokec12 EmployeeModelAssembler\cf6 \strokec6  \cf12 \strokec12 implements\cf6 \strokec6  \cf12 \strokec12 RepresentationModelAssembler\cf6 \strokec6 <\cf11 \strokec11 Employee, EntityModel<Employee\cf6 \strokec6 >> \cb2 \{\
+\
+When hit db vs repo\
+
+\f0\fs32 \cf0 \cb2 \outl0\strokewidth0 \
+What is the diff between an \
+@Entity\
+Vs\
+@Entity\
+@Table\
+The second one says the table is different than the entity name\
+\
+Diff between Long long, String string \
+\
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f4\b\fs40 \cf14 \cb2 \outl0\strokewidth0 \strokec14 JpaRepository returns list for final\
+
+\fs22 In book controller, why do a throws when I\'92m handling it in book service
+\fs40 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs32 \cf0 \cb2 \outl0\strokewidth0 \
+\
+\
+\
+\
+\page Entity Controller Service Repo\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f5\fs26 \cf15 \cb1 \outl0\strokewidth0 \strokec15 \
+\
+\pard\pardeftab720\sa330\partightenfactor0
+
+\fs30 \cf15 \cb2 There is no hard definition for what you're asking about, only 'general practices' that people adhere to more or less, depending on the circumstance.\cb1 \
+\cb2 Typically, a 'service' class handles requests from a user of some sort, encapsulating business logic and persistence away from the action being taken.\cb1 \
+\cb2 For instance, a user wants to buy an item. The service class exposes some method\'a0buy(Item item). The service class was instantiated with some notion of who is taking the action. It does all the 'heavy lifting' of marking that the item is bought, of calling the class that handles the money transfer, of calling the class responsible for placing a 'receipt' in the user's data, etc.\cb1 \
+\cb2 What it does\'a0
+\f6\i not
+\f5\i0 \'a0do is any of these things directly. It does not write to the database, but defers to the\'a0User,\'a0Item,\'a0Inventory\'a0and\'a0Receipt\'a0classes as needed, who all know how to persist their own information. (Or it talks to a database service that does this.) A 'service' class really glues together a lot of lower-level functionality.\cb1 \
+\cb2 The reason you do this in a service class is for code base structure. For instance, if you have an\'a0Item\'a0object, it might be modified by a sale, by an administrator reducing the price, by an employee marking it as missing, etc. You could put all these methods into one class, but then where do you go when you want to update the checkout process? It becomes painful. Instead, you have different services:\'a0PurchaseService,\'a0InventoryManagementService, etc. The particular services are dependent on your use-case, and where it makes sense to logically divide things up: for instance, it can be by action category ('Purchase') or it could be by user type ('CustomerService', 'OwnerService', 'EmployeeService', etc.) in order to make things like handling different permissions easier.\cb1 \
+\pard\tx9360\tx9360\tx9360\pardeftab720\sa330\partightenfactor0
+\cf15 \cb2 Further, there is no reason for the service class to care about the particulars of how or where the data is ultimately stored. It should be 'agnostic' to details about the database, or files, or what have you. It's really only manipulating the specific classes that actually have that responsibility. Remember: each class should really only have a single domain of responsibility. If a class talks to the database, it should not be doing 'business logic' of also calculating, for example, the tax owed on a purchase.\cb1 \
+\pard\pardeftab720\sa330\partightenfactor0
+\cf15 \cb2 Note that the Java\'a0
+\f7\b language
+\f5\b0 \'a0in no way enforces any of these practices. They are just things that people do in order to provide additional structure and make their life easier. The compiler does not care.\
+\
+\
+JUNIT\
+Can do a 
+\f8\b\fs66 \cf16 \cb2 \strokec16 JUnit Expected Exception Test: @Test(expected)\
+
+\f5\b0\fs30 \cf15 \cb2 \strokec15 \
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat17 \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clcbpat17 \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clcbpat17 \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\fs40 \cf16 \cb1 \strokec16 1.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertEquals(boolean expected, boolean actual)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 It checks whether two values are equals similar to equals method of Object class\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 2.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertFalse(boolean condition)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 functionality is to check that a condition is false.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat17 \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clcbpat17 \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clcbpat17 \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 3.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertNotNull(Object object)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 \'93assertNotNull\'94 functionality is to check that an object is not null.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 4.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertNull(Object object)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 \'93assertNull\'94 functionality is to check that an object is null.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat17 \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clcbpat17 \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clcbpat17 \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 5.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertTrue(boolean condition)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 \'93assertTrue\'94 functionality is to check that a condition is true.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 6.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void fail()\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 If you want to throw any assertion error, you have fail() that always results in a fail verdict.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat17 \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clcbpat17 \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clcbpat17 \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 7.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertSame([String message]\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 \'93assertSame\'94 functionality is to check that the two objects refer to the same object.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat2 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth333\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5681\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth10007\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf18 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl120 \clpadb120 \clpadr120 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 8.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 void assertNotSame([String message]\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf16 \'93assertNotSame\'94 functionality is to check that the two objects do not refer to the same object.\cell \lastrow\row
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f8\b \cf16 \cb2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec16 assertArrayEquals(expected, actual)\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f0\b0 \cf16 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf16 \cb2 \strokec16 JUnit Parameterized Test with Example using @Parameters - same test over and over without just calling the same test over and over\
+Come back and try this \
+\
+Structure;\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f9\fs24 \cf0 \cb1 \strokec3 com \
+    +- example \
+        +- myapplication \
+            +- Application.java \
+            +- customer \
+                +- Customer.java \
+                +- CustomerController.java \
+                +- CustomerService.java \
+                +- CustomerRepository.java \
+            +- order \
+                +- order.java \
+                +- OrderController.java \
+                +- OrderService.java \
+                +- OrderRepository. java \
+\pard\pardeftab720\partightenfactor0
+
+\f8\b\fs66 \cf16 \cb2 \strokec16 \
+
+\fs26 Controller-service-repository relationship\
+https://tom-collings.medium.com/controller-service-repository-16e29a4684e5
+\fs66 \
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f0\b0\fs40 \cf16 \cb1 \strokec16 \
+\pard\pardeftab720\sa330\partightenfactor0
+
+\f5\fs30 \cf15 \strokec15 \
+\pard\pardeftab720\sa330\partightenfactor0
+\cf19 \outl0\strokewidth0 In order to return a JSON class, you need annotation @RestController, and getters and setters in the Entity resource\cf15 \outl0\strokewidth0 \strokec15 \page QUESTIONS\
+\pard\pardeftab720\sa330\partightenfactor0
+\cf15 \
+\pard\pardeftab720\sa330\partightenfactor0
+\cf19 \outl0\strokewidth0 not sure why, but a repository is an interface, not a class\cf15 \outl0\strokewidth0 \strokec15 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\fs26 \cf0 \strokec3 ??You can @Autowired a constructor with arguments, what does that do\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \outl0\strokewidth0 Diff between Long long, String string \
+\
+When I was calling a function that tried to get one resource(book) and is forced to use an optional, why did the calling function have to deal with the exception if the Called function is dealing with the exception (it had to do a throws)\
+\
+What does final mean \
+\
+What does @Service really do\
+What does @Repository actually do\
+\
+@ResponseBody ResponseEntity\
+@ResponseBody Page\
+@ResponseBody Response\
+@ResponseBody Set\
+@ResponseBody List
+\f9\fs26 \cb1 \outl0\strokewidth0 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Try using orElseThrow\
+\
+Add to test\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf20 \cb21 \strokec20 verify
+\f10\b (
+\f2\b0 userRepository
+\f10\b )
+\f2\b0 .save
+\f10\b (
+\f2\b0 user
+\f10\b )
+\f2\b0 ;
+\f9\fs26 \cf0 \cb1 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+Unit testing \
+https://gabrielpulga.medium.com/a-beginners-guide-to-unit-testing-crud-endpoints-of-a-spring-boot-java-web-service-api-8ae342c9cbcd\
+\
+\
+Controller unit test example:\
+https://www.bezkoder.com/spring-boot-webmvctest/\
+\
+\
+\
+\
+\page \pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf22 \cb2 \strokec22 ResponseEntity<> is a generic class with a type parameter, you can specify what type of object to be serialized into the response body. @ResponseBody is an annotation, indicates that the return value of a method will be serialized into the body of the HTTP response.
+\f9\fs26 \cf0 \cb1 \strokec3 \page \
+\pard\pardeftab720\partightenfactor0
+
+\f11\b \cf0 Default, no arg constructor
+\f9\b0  -:\outl0\strokewidth0 https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html#axzz85cYmikFv\outl0\strokewidth0 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+
+\f12\fs20 \cf0 \cb2 \strokec3 Almost all Java developers know that compiler adds a default constructor or better known as a no-argument constructor in every Java class, but many of them forget that
+\f13\i \cb1 \'a0it only does when you don't provide any other constructor
+\f12\i0 \cb2 . This means it becomes the\'a0
+\f14\b \cb1 developers' responsibility
+\f12\b0 \cb2 \'a0to add a no-argument constructor if he is adding an explicit constructor. Now,\'a0
+\f13\i \cb1 Why it's important to provide a default constructor in Java
+\f12\i0 \cb2 , What happens if your class doesn't have a no-argument constructor? Well, this is how it's asked in many Java interviews, most commonly as part of\'a0{\field{\*\fldinst{HYPERLINK "http://javarevisited.blogspot.sg/2011/09/spring-interview-questions-answers-j2ee.html"}}{\fldrslt \cf23 \cb1 \ul \ulc23 \strokec23 Spring\'a0}}and\'a0{\field{\*\fldinst{HYPERLINK "http://javarevisited.blogspot.sg/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html"}}{\fldrslt \cf23 \cb1 \ul \ulc23 \strokec23 Hibernate interviews}}.\cb1 \
+\
+\
+\cb2 It's not mandatory to define default constructor, but if you are writing Hibernate persistent class, JPA entities, or using the Spring framework to manage object creation and wiring dependencies, you need to be a bit careful. Many of open source framework, uses 
+\f14\b reflection
+\f12\b0  to create instance or Object at runtime, based upon the name of the class.\cb1 \
+\
+\cb2 For example, When\'a0
+\f15 \cb1 Hibernate\'a0
+\f12 \cb2 creates an instance of entities using reflection it uses the\'a0
+\f15 \cb1 Class.newInstance()
+\f12 \cb2 \'a0method, which requires a\'a0
+\f14\b \cb1 no-argument constructor
+\f12\b0 \cb2 \'a0to create an instance. It's effectively equivalent to the\'a0
+\f15 \cb1 new Entity()
+\f12 \cb2 .\cb1 \
+\
+\cb2 This method throws\'a0
+\f15 \cb1 InstantiationException
+\f12 \cb2 \'a0if it doesn't found any no-argument constructor in the Entity class, and that's why it's advised to provide a\'a0{\field{\*\fldinst{HYPERLINK "http://javarevisited.blogspot.sg/2012/12/what-is-constructor-in-java-example-chainning-overloading.html"}}{\fldrslt \cf23 \cb1 \ul \ulc23 \strokec23 no-argument constructor}}.\cb1 \
+\
+\cb2 Btw, if you are new to the world of Hibernate then I also suggest you go through a hands-on course like these\'a0{\field{\*\fldinst{HYPERLINK "https://javarevisited.blogspot.com/2018/01/top-5-hibernate-and-jpa-courses-for-java-programmers-learn-online.html"}}{\fldrslt \cf23 \cb1 \ul \ulc23 \strokec23 best Hibernate and JPA courses for Java developers}}. It's a great resource to understand the Hibernate fundamentals and advanced concepts for beginners and experienced java developers.\'a0
+\f14\b\fs36 \cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f12\b0\fs20 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 By the way, it's not just Hibernate, who makes use of Reflection to create an instance of the class. If you are familiar with\'a0{\field{\*\fldinst{HYPERLINK "http://javarevisited.blogspot.sg/2012/12/inversion-of-control-dependency-injection-design-pattern-spring-example-tutorial.html"}}{\fldrslt \cf23 \cb1 \ul \ulc23 \strokec23 Spring and Dependency Injection}}, that you might know that\'a0
+\f15 \cb1 Spring\'a0
+\f12 \cb2 also creates an instance of a class using reflection, but it's more sophisticated and allow you to choose which constructor to call by specifying various constructor argument using\'a0
+\f14\b \cf24 \cb1 \strokec24 <constructor-arg
+\f12\b0 \cf6 \strokec6 \'a0\cf25 \strokec25 value=\cf26 \cb27 \strokec26 "someValue"
+\f14\b \cf24 \cb1 \strokec24 />
+\f15\b0 \cf0 \strokec3 \'a0
+\f12 \cb2 and\'a0
+\f14\b \cf24 \cb1 \strokec24 <constructor-arg
+\f12\b0 \cf6 \strokec6 \'a0\cf25 \strokec25 ref=\cf26 \cb27 \strokec26 "someRefrence"
+\f14\b \cf24 \cb1 \strokec24 />
+\f12\b0 \cf0 \cb2 \strokec3 \'a0tags.\cb1 \
+\
+Read more:\'a0{\field{\*\fldinst{HYPERLINK "https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html#ixzz85cZOqoha"}}{\fldrslt \cf28 \ul \ulc28 \strokec28 https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html#ixzz85cZOqoha}}
+\f9\fs24 \strokec3 \
+\pard\pardeftab720\sa330\partightenfactor0
+
+\f5\fs30 \cf15 \strokec15 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 \outl0\strokewidth0 \
+\
+\
+\
+\
+\
+\page Spring boot\
+Spring allows java app to run on a virtual machine \
+Spring boot - web application w microservices development fast via three pillars:\
+\
+Autoconfigure - example makes assumption about datasource\
+Opinionated configuration\
+Ability to create standalone applications \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5 \cf29 Allows modular applications suited to micro services\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f5 \cf29 Spring Framework also offers built-in support for typical tasks that an application needs to perform, such as data binding, type conversion, validation, exception handling, resource and event management, internationalization, and\'a0
+\f0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\page Autowire/dependency injection\
+\pard\pardeftab720\partightenfactor0
+
+\f6\i \cf30 \cb2 \outl0\strokewidth0 \strokec30 dependency injection
+\f5\i0 \'a0feature that lets objects define their own dependencies that the Spring container later injects into them.\
+\
+\
+https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html#:~:text=Dependency%20injection%20(DI)%20is%20a,returned%20from%20a%20factory%20method.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb2 \outl0\strokewidth0 \page 
+\f8\b reflection:\
+
+\f0\b0\fs22 https://www.baeldung.com/java-reflection
+\f8\b\fs32 \
+\
+
+\f0\b0\fs22 Getting properties of a class at runtime
+\f8\b\fs32 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Path variable vs request param\
+\
+
+\f0\b0\fs22 /national/employees/\{state\} vs /national/employees?state=ca }
